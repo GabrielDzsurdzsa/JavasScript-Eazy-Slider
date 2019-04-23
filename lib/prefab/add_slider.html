@@ -1,0 +1,36 @@
+﻿<fieldset>
+    <div class="input-group">
+        <span id="slide_no">Slide Image</span>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="add_new_slide" name="add_new_slide" aria-describedby="add_new_slide_btn">
+            <label class="custom-file-label" for="add_new_slide">Choose file</label>
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="add_new_slide_btn" onclick="request('GET', add_slider.href, add_slides_container, true);">+</button>
+        </div>
+    </div><br />
+    <div class="input-group">
+        <span id="slide_title">Slide Title</span>
+        <div class="custom-file">
+            <input type="text" id="slide_title_input" name="slide_title_input" class="form-control" placeholder="e.g. Slide 1 Title" required />
+        </div>
+    </div><br />
+    <div class="input-group">
+        <span id="slide_caption">Slide Caption</span>
+        <div class="custom-file">
+            <input type="text" id="slide_caption_input" name="slide_caption_input" class="form-control" placeholder="e.g. Slide 1 Caption: Some descriptive text here..." required />
+        </div>
+    </div><br />
+    <div class="input-group">
+        <span id="slide_button">Button Caption</span>
+        <div class="custom-file">
+            <input type="text" id="button_text" name="button_text" class="form-control" placeholder="e.g. Click Me" required />
+        </div>
+    </div><br />
+    <div class="input-group">
+        <span id="slide_link">Button Link</span>
+        <div class="custom-file">
+            <input type="text" id="button_link" name="button_link" class="form-control" placeholder="e.g. http://link.com" required />
+        </div>
+    </div>                          
+</fieldset>

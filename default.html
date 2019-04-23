@@ -1,0 +1,110 @@
+﻿<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Javascript Eazy Slider. 1 page, 1 form solution to build simple, clean and flexible bootstrap styled media sliders to be used in any web project. Wordpress compatible.">
+    <meta name="author" content="Gabriel Dzsurdzsa">
+    <title>Javascript Eazy Slider</title>
+
+    <!-- Styles -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/dashboard/dashboard.css" rel="stylesheet" type="text/css">
+    <link href="https://getbootstrap.com/docs/4.3/examples/carousel/carousel.css" rel="stylesheet" type="">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="lib/css/jes.css" rel="stylesheet" type="text/css" />
+    <link id="slider" href="lib/prefab/slider.html" rel="canonical" />
+    <link id="add_slider" href="lib/prefab/add_slider.html" rel="canonical" />
+    <link id="slider_item" href="lib/prefab/slider_item.html" rel="canonical" />
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="lib/js/objects.js" type="text/javascript"></script>
+    <script src="lib/js/jes.js" type="text/javascript"></script>
+    <script src="lib/js/listeners.js" type="text/javascript"></script>
+
+</head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0">
+                <a class="navbar-brand col-md-4 col-lg-3 mr-0" href="#">JavaScript Eazy Slider</a>
+                <ul class="navbar-nav px-3">
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link" href="#" onclick="window.close();"><i class="fas fa-door-open"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-md-4 d-none col-lg-3  d-md-block bg-light sidebar">
+                        <p><i class="fas fa-sliders-h"></i></p>
+                        <form id="create_slider">
+                            <div class="form-group">
+                                <label for="slider_name"><b>Slider Name</b></label>
+                                <input type="text" class="form-control" id="slider_name" name="slider_name" placeholder="e.g. My Slider" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="slider_ui_framework"><b>UI Framework</b></label>
+                                <select class="form-control" id="slider_ui_framework" name="slider_ui_framework" required>
+                                    <option value="">Select UI Framework...</option>
+                                    <option value="bootstrap">Bootstrap</option>
+                                </select>
+                            </div>
+                            <div><label><b>Slider Type</b></label></div>
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="is_video" name="is_video" /><label class="form-check-label" for="is_video">Video</label>&nbsp;&nbsp;
+                                <input type="checkbox" class="form-check-input" id="is_photo" name="is_photo" /><label class="form-check-label" for="is_photo">Photo</label>&nbsp;&nbsp;
+                                <input type="checkbox" class="form-check-input" id="is_background" name="is_background" /><label class="form-check-label" for="is_background">Background</label><br />
+                            </div>
+                            <div class="form-group">
+                                <br />
+                                <label for="slider_effects"><b>Effects</b></label>
+                                <select class="form-control" id="slider_effects" name="slider_effects" required>
+                                    <option value="">Select effect...</option>
+                                    <option value="fade">Fade</option>
+                                    <option value="slide">Slide</option>
+                                    <option value="zoom">Zoom</option>
+                                </select>
+                            </div><br/>
+                            <div>
+                                <label><b>Slides</b></label>
+                            </div>
+                            <div id="add_slides_container">
+                                
+                            </div><br /><br />
+                            <div class="form-group bottom">
+                                <input type="submit" class="btn btn-primary" id="create_slider" name="create_slider" value="Create Slider" />
+                            </div>  
+                        </form>
+
+                    </nav>
+
+                    <div class="col-md-8 col-lg-9 bg-dark no-padding-margin" id="carousel_container">
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>            
+            <a href="#" onclick="this.parentNode.style.display = 'none';"><h3>X</h3></a>
+            <ul>
+                <li><h3>How to:</h3></li>
+                <li>1. Enter name</li>
+                <li>2. Select UI Framework</li>
+                <li>3. Select Slider Type</li>
+                <li>3. Choose Slider Effect</li>
+                <li>4. Add slides</li>
+                <li>5. Click Create Slider</li>
+                <li>6. Copy and paste self contained code</li>
+            </ul>
+        </footer>
+    </body>
+
+</html>

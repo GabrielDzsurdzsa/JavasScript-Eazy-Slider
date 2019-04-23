@@ -1,0 +1,5 @@
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\Javascript Eazy Slider\Javascript Eazy Slider\bin\Javascript Eazy Slider.dll
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\Javascript Eazy Slider\Javascript Eazy Slider\bin\Javascript Eazy Slider.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\Javascript Eazy Slider\Javascript Eazy Slider\obj\Debug\Javascript Eazy Slider.dll
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\Javascript Eazy Slider\Javascript Eazy Slider\obj\Debug\Javascript Eazy Slider.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\Javascript Eazy Slider\Javascript Eazy Slider\obj\Debug\Javascript Eazy Slider.csprojResolveAssemblyReference.cache
