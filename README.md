@@ -1,4 +1,2 @@
 # JavasScript-Eazy-Slider
-Pure JavaScript and HTML5 slider. 
-
-Self-contained js slideshow generator. Features include: adding unlimited number of slides, multiple slide effects, UI libraries to choose from, responsive & downloadable. 
+Pure JavaScript slideshow generator. Features include: adding unlimited number of slides, multiple slide effects and UI libraries to choose from, responsive & downloadable. 
